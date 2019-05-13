@@ -3,7 +3,7 @@ package com.thadocizn.celebrityapp
 /**
  * Created by charles on 13,May,2019
  */
-class CelebrityRepository() {
+class CelebrityRepository {
 
      val list = ArrayList<Celebrity>()
 

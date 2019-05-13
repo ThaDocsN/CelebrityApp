@@ -5,7 +5,7 @@ package com.thadocizn.celebrityapp
  */
 class CelebrityRepository() {
 
-    private val list = ArrayList<Celebrity>()
+     val list = ArrayList<Celebrity>()
 
     init {
         list.add(Celebrity("Angelina Jolie", "Sister of ", R.drawable.angelina_jolie, true))

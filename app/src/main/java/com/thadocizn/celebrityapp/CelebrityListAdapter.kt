@@ -5,7 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import kotlinx.android.synthetic.main.list_item_celebrity.view.*
-import org.jetbrains.anko.toast
+import org.jetbrains.anko.startActivity
 
 /**
  * Created by charles on 13,May,2019
@@ -22,7 +22,12 @@ class CelebrityListAdapter(private val list: ArrayList<Celebrity>) :
                 lblActorName.text = celebrity.name
                 lblActorDes.text = celebrity.des
                 containerView.setOnClickListener {
-                    context.toast("It works")
+                    context.startActivity<DetailsActivity>(
+                        DetailsActivity.ACTOR_IMAGE to celebrity.image,
+                        DetailsActivity.ACTOR_NAME to celebrity.name,
+                        DetailsActivity.ACTOR_DES to celebrity.des
+
+                    )
                 }
             }
         }

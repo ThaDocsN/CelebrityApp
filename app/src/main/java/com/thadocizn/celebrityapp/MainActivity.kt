@@ -1,8 +1,7 @@
 package com.thadocizn.celebrityapp
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.support.v7.widget.LinearLayoutManager
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -13,6 +12,6 @@ class MainActivity : AppCompatActivity() {
 
         val adapter = CelebrityListAdapter(CelebrityRepository().list)
         recycleView.adapter = adapter
-        recycleView.layoutManager = LinearLayoutManager(this)
+        recycleView.layoutManager = androidx.recyclerview.widget.LinearLayoutManager(this)
     }
 }

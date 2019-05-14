@@ -1,6 +1,5 @@
 package com.thadocizn.celebrityapp
 
-import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,9 +10,10 @@ import org.jetbrains.anko.startActivity
  * Created by charles on 13,May,2019
  */
 class CelebrityListAdapter(private val list: ArrayList<Celebrity>) :
-    RecyclerView.Adapter<CelebrityListAdapter.ViewHolder>() {
+    androidx.recyclerview.widget.RecyclerView.Adapter<CelebrityListAdapter.ViewHolder>() {
 
-    class ViewHolder(private val containerView: View) : RecyclerView.ViewHolder(containerView) {
+    class ViewHolder(private val containerView: View) :
+        androidx.recyclerview.widget.RecyclerView.ViewHolder(containerView) {
 
         fun bindCelebrity(celebrity: Celebrity) {
 

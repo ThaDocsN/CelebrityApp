@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Celebrity App</string>
+    <string name="actor_name">Actor Name</string>
+    <string name="description">Description</string>
 </resources>

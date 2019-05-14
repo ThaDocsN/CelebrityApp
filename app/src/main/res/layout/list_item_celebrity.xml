@@ -12,7 +12,7 @@
             android:layout_height="100dp"
             android:layout_weight="1"
             android:padding="5dp"
-            app:srcCompat="@drawable/angelina_jolie" />
+            app:srcCompat="@drawable/tupac" />
 
     <LinearLayout
             android:layout_width="match_parent"
